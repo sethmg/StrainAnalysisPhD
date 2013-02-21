@@ -24,3 +24,4 @@ abline(h=0)
 mtext(text="Error (%)",side=2,cex=1.5,line=2)
 
 t.results <- lapply(error.data,t.test)
+t.stdev <- lapply(error.data,sd)

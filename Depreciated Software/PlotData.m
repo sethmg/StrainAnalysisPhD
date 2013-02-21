@@ -4,7 +4,7 @@ close all
 
 % read in the data
 fileName = 'DIC_InstrongStrainError.csv';
-inFID = fopen([pwd,'/',fileName],'r');
+inFID = fopen([pwd,'/../',fileName],'r');
 D = textscan(inFID,'%s %f %f','delimiter','\t','headerlines',1,'treatAsEmpty','na');
 specimen = D{:,1};
 average = D{:,2};
